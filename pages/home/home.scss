@@ -1,0 +1,87 @@
+page-home {
+	.masters{
+    background-color: white;
+  }
+
+  .site-title{
+      font-size: 18px;
+      text-align: center;
+      font-family: "Karla","Segoe UI";
+      font-weight: bold;
+      /*color: #0b427c;*/
+      color: white;
+
+
+      @media screen and (min-width: 768px){
+         font-size: 31px;
+         letter-spacing: 2px;
+      }
+  }
+
+  .site-navitem{
+        text-align: center;
+        margin-top: 10px;
+  }
+
+  .logo-container{
+    width: 100%;
+  }
+
+  .logo-container img{
+    width: 50%;
+    height: 75%;
+    margin-left: 75px;
+  }
+
+  .menu-icon{
+    font-size: 50px;
+  }
+
+ 
+	.card-background-image{
+		position: relative;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+
+  .card-title {
+    position: absolute;
+    padding-top: 3%;
+    bottom: 0px;
+    font-size: 1.7em;
+    width: 100%;
+    font-weight: bold;
+    opacity: 1;
+    color: white;
+    font-family: "Karla","Segoe UI";
+    height: 20%;
+    background-color: black;
+
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    font-family: "Karla","Segoe UI";
+  }
+
+  .card-background-image:hover{
+      .card-title{
+        opacity: 1;
+      }
+      img{
+        opacity: 0.80;
+      }
+      cursor: pointer;
+  }
+
+  .navbar-container{
+    width: 50%;
+  }
+
+}
