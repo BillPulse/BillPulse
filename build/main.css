@@ -30569,7 +30569,7 @@ page-billinfo .billtitle-text {
   letter-spacing: 8px;
   font-size: 40px;
   font-weight: bold;
-  font-family: "Roboto";
+  font-family: Karla, 'Segoe UI', Roboto, sans-serif;
 }
 
 page-billinfo .bannertext {
