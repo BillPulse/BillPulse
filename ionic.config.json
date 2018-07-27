@@ -1,0 +1,8 @@
+{
+  "name": "fullNav",
+  "app_id": "cd025087",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

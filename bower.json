@@ -1,0 +1,21 @@
+{
+  "name": "full",
+  "description": "proto",
+  "main": "",
+  "authors": [
+    "Ionic Framework"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ionic-ratings": "^0.3.0"
+  }
+}
