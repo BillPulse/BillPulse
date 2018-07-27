@@ -30534,11 +30534,6 @@ ion-navbar.toolbar {
   overflow-y: auto !important;
 }
 
-page-about p {
-  font-size: 40px;
-  line-height: 50px;
-}
-
 page-billinfo .banner {
   /*container*/
   display: -webkit-box;
@@ -30605,91 +30600,6 @@ page-billinfo .statusbox {
   background-color: white;
   background-size: cover;
   padding: 20px;
-}
-
-page-home .masters {
-  background-color: white;
-}
-
-page-home .site-title {
-  font-size: 18px;
-  text-align: center;
-  font-family: "Karla","Segoe UI";
-  font-weight: bold;
-  /*color: #0b427c;*/
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  page-home .site-title {
-    font-size: 31px;
-    letter-spacing: 2px;
-  }
-}
-
-page-home .site-navitem {
-  text-align: center;
-  margin-top: 10px;
-}
-
-page-home .logo-container {
-  width: 100%;
-}
-
-page-home .logo-container img {
-  width: 50%;
-  height: 75%;
-  margin-left: 75px;
-}
-
-page-home .menu-icon {
-  font-size: 50px;
-}
-
-page-home .card-background-image {
-  position: relative;
-  text-align: center;
-  border-radius: 15px;
-}
-
-page-home .card-title {
-  position: absolute;
-  padding-top: 3%;
-  bottom: 0px;
-  font-size: 1.7em;
-  width: 100%;
-  font-weight: bold;
-  opacity: 1;
-  color: white;
-  font-family: "Karla","Segoe UI";
-  height: 20%;
-  background-color: black;
-}
-
-page-home .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
-  width: 100%;
-  color: #fff;
-  opacity: 0;
-  font-family: "Karla","Segoe UI";
-}
-
-page-home .card-background-image:hover {
-  cursor: pointer;
-}
-
-page-home .card-background-image:hover .card-title {
-  opacity: 1;
-}
-
-page-home .card-background-image:hover img {
-  opacity: 0.80;
-}
-
-page-home .navbar-container {
-  width: 50%;
 }
 
 page-whatisabill p {
