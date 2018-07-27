@@ -400,7 +400,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/billinfo/billinfo.module#BillinfoPageModule', name: 'BillinfoPage', segment: 'billinfo', priority: 'low', defaultHistory: ['TabsPage'] },
+                        { loadChildren: '../pages/billinfo/billinfo.module#BillinfoPageModule', name: 'BillinfoPage', segment: 'billinfo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/bills/bills.module#BillsPageModule', name: 'BillsPage', segment: 'bills', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/following/following.module#FollowingPageModule', name: 'FollowingPage', segment: 'following', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/history/history.module#HistoryPageModule', name: 'HistoryPage', segment: 'history', priority: 'low', defaultHistory: [] },
