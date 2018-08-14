@@ -25,7 +25,7 @@ $( ".bp-card" ).click(function() {
     var clickedcard = $(this).children(".title").children("strong").html();
 
     if (clickedcard == "What is a Bill?"){
-
+        $(".content .container").load("data/whats-a-bill.html");
     }
     else{
         $( ".site-container" ).toggleClass( "modal-active" );
@@ -50,7 +50,7 @@ $( window ).resize(function() {
 $(document).ready(function(){
     setTimeout(function(){
       $(".content .container").load("data/main-menu.html");
-    }, 500);
+    }, 100);
 });
 
 
