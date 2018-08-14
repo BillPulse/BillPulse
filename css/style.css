@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  transition: 0.07s;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.site-container{
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto","Arial", "Helvetica", sans-serif;
+}
+
+.navbar{
+  padding: 0;
+  z-index: 999;
+}
+
+.bp-blue-bg{
+  background-color: #354c7a;
+  border-color: #b2b2b2;
+}
+
+.bp-button{
+  padding: 0 .5em;
+  cursor: pointer;
+  font-size: 5vw;
+}
+
+.bp-button i{
+  width: 20px;
+}
+
+.bp-menu{
+  padding: 0 .75em;
+  color: #eee;
+  border-bottom: 0.25em solid transparent;
+  height: 100%;
+  line-height: 2.5em;
+  text-transform: capitalize;
+  font-size: 14px;
+  width: 12%;
+  transition: 0.15s;
+  text-align: center;
+
+}
+
+.bp-menu i{
+  width: 30px;
+}
+
+.bp-active-menu, .bp-menu:hover{
+  border-bottom: 0.25em solid #e9e9e9;
+  text-decoration: none;
+  color: white;
+}
+
+.bp-searchbar{
+  padding-left: 2.5em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); 
+  font-size: 16px; 
+  border-radius: 2px;
+  border: 0;
+}
+
+.bp-card-container{
+  padding: 2vh;
+}
+
+.bp-card{
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 18vh;
+  height: 18vw;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.bp-card .bg{
+  height: 85%;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.08s;
+  background-position: center;
+}
+
+.bp-card:hover .bg{
+  opacity: 0.6;
+}
+
+.bp-card .title{
+  background-color: black;
+  color: white;
+  font-size: 1.5vh;
+  text-align: center;
+  height: 15%;
+}
+
+.modal-close{
+  z-index: -2;
+  position: fixed;
+   width: 100%;
+  height: 100%;
+  transition: 0.1s;
+  
+}
+
+.modal-close-bg{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.1s;
+  top: 0;
+  position: absolute;
+}
+
+.modal-active .modal-close{
+  z-index: 10;
+}
+
+.modal-active .modal-close .modal-close-bg{
+  background-color: black;
+  opacity: 0.5;
+}
+
+.feature-inactive .dev-card{
+  display: block;
+}
+
+.content{
+  position: relative;
+  transition: 0.25s ease-in-out;
+  left: 0;
+}
+
+.content .container{
+  top: 5rem;
+  position: relative;
+}
+
+.menu-active .content{
+  left: 304px;
+}
+
+.mobile-sidebar{
+  width: 100%;
+  background-color: #354c7a;
+  border-color: #b2b2b2;
+  display: none;
+  transition: 1s;
+}
+
+.menu-active .mobile-sidebar{
+  width: 304px;
+  display: flex;
+  height: 100%;
+  background: transparent;
+  border-color: transparent;
+  position: absolute;
+  top: 100px;
+  z-index: -10;
+
+}
+
+.menu-active .mobile-sidebar .bp-menu{
+  color: black;
+  width: 100%;
+  text-align: left;
+  padding: 1em 3em;
+  border-bottom: none;
+}
+
+.menu-active .mobile-sidebar .bp-menu:hover{
+  background-color: #e9e9e9;
+}
+
+.menu-active .mobile-sidebar .bp-menu .menu-name{
+  margin-left: 40px;
+  transition: 0.2s; 
+}
+
+.dev-card{
+  background-color: #fafafa;
+  color: black;
+  z-index: 60;
+  padding: 1.25em;
+  display: none;
+  font-size: 14px;
+  line-height: 1em;
+  max-width: 280px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 16px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+@media only screen and (min-width: 2560px) {
+    .container-fluid, .container{
+      max-width: 1440px !important;
+    }
+
+}
