@@ -1,11 +1,11 @@
-$( ".bp-button" ).on("click", function() {
+$( document ).on("click", ".bp-button", function() {
     $( ".site-container" ).toggleClass( "modal-active" );
     $( ".site-container" ).toggleClass( "menu-active" );
     $( ".bp-button i" ).toggleClass( "fa-times" );
     $( ".bp-button i" ).toggleClass( "fa-bars" );
   });
 
-  $( ".modal-close-bg" ).on("click", function() {
+  $( document ).on("click", ".modal-close-bg" , function() {
     $( ".site-container" ).removeClass( "modal-active" );
     $( ".site-container" ).removeClass( "menu-active" );
     $( ".site-container" ).removeClass( "feature-inactive" );
@@ -13,7 +13,7 @@ $( ".bp-button" ).on("click", function() {
     $( ".bp-button i" ).addClass( "fa-bars" );
   });
 
-  $( ".modal-close .dev-card button" ).on("click", function() {
+  $( document ).on("click", ".modal-close .dev-card button", function() {
     $( ".site-container" ).removeClass( "modal-active" );
     $( ".site-container" ).removeClass( "menu-active" );
     $( ".site-container" ).removeClass( "feature-inactive" );
@@ -30,7 +30,7 @@ $( ".bp-button" ).on("click", function() {
     $( ".bp-button i" ).addClass( "fa-bars" );
   });
 
- $( ".bp-card" ).on("click", function() {
+ $( document ).on("click", ".bp-card", function() {
       var clickedcard = $(this).children(".title").children("strong").html();
 
       if (clickedcard == "What is a Bill?"){
