@@ -11,7 +11,6 @@ $( document ).on("click", ".bp-button", function() {
     }
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
-      $(".loading").fadeOut();
       $(".content .container").load("data/main-menu.html");
       visitedpage = false;
     }
