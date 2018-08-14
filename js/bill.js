@@ -11,6 +11,7 @@ $( document ).on("click", ".bp-button", function() {
     }
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
+      $( ".bp-button" ).addClass( "d-lg-none");
       $(".content .container").load("data/main-menu.html");
       visitedpage = false;
     }
@@ -65,6 +66,7 @@ $( document ).on("click", ".bp-button", function() {
       if (visitedpage == true){
         $( ".bp-button i" ).removeClass( "fa-bars" );
         $( ".bp-button i" ).addClass( "fa-arrow-left" );
+        $( ".bp-button" ).removeClass( "d-lg-none");
       }
     });
 
