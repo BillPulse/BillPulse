@@ -2,11 +2,8 @@ $(document).ready(function(){
     setTimeout(function(){
       $(".content .container").load("data/main-menu.html");
     }, 100);
-});
 
-
-
-$( ".bp-button" ).click(function() {
+    $( ".bp-button" ).click(function() {
   $( ".site-container" ).toggleClass( "modal-active" );
   $( ".site-container" ).toggleClass( "menu-active" );
   $( ".bp-button i" ).toggleClass( "fa-times" );
@@ -56,4 +53,5 @@ $( window ).resize(function() {
     });
 
 
+});
 
