@@ -21,22 +21,6 @@ $( ".modal-close .dev-card button" ).click(function() {
   $( ".bp-button i" ).addClass( "fa-bars" );
 });
 
-$( ".bp-card" ).click(function() {
-    var clickedcard = $(this).children(".title").children("strong").html();
-
-    if (clickedcard == "What is a Bill?"){
-        $(".content .container").load("data/whats-a-bill.html");
-    }
-    else{
-        $( ".site-container" ).toggleClass( "modal-active" );
-        $( ".site-container" ).toggleClass( "feature-inactive" );
-    }
-});
-
-$( ".bp-menu" ).click(function() {
-   $( ".site-container" ).addClass( "modal-active" );
-   $( ".site-container" ).addClass( "feature-inactive" );
-});
 
 $( window ).resize(function() {
   $( ".site-container" ).removeClass( "modal-active" );
@@ -51,6 +35,24 @@ $(document).ready(function(){
     setTimeout(function(){
       $(".content .container").load("data/main-menu.html");
     }, 100);
+
+
+    $( ".bp-card" ).click(function() {
+    var clickedcard = $(this).children(".title").children("strong").html();
+
+    if (clickedcard == "What is a Bill?"){
+        $(".content .container").load("data/whats-a-bill.html");
+    }
+    else{
+        $( ".site-container" ).toggleClass( "modal-active" );
+        $( ".site-container" ).toggleClass( "feature-inactive" );
+    }
+    });
+
+    $( ".bp-menu" ).click(function() {
+       $( ".site-container" ).addClass( "modal-active" );
+       $( ".site-container" ).addClass( "feature-inactive" );
+    });
 });
 
 
