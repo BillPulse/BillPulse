@@ -148,6 +148,8 @@ body{
 
 .main-box-mg{
   top: 3rem;
+  width: 100%;
+  position: relative;
 }
 
 .menu-active .content{
