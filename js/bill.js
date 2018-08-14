@@ -78,8 +78,8 @@ $( document ).on("click", ".bp-button", function() {
 
 
 $(document).ready(function(){
+    $(".loading").fadeOut();
     setTimeout(function(){
-      $(".loading").fadeOut();
       $(".content .container").load("data/main-menu.html");
     }, 100);
 
