@@ -28,7 +28,7 @@ body{
 .bp-button{
   padding: 0 .5em;
   cursor: pointer;
-  font-size: 5vw;
+  font-size: 1.25em;
 }
 
 .bp-button i{
