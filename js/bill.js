@@ -11,6 +11,7 @@ $( document ).on("click", ".bp-button", function() {
     }
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
+      $(".loading").fadeOut();
       $(".content .container").load("data/main-menu.html");
       visitedpage = false;
     }
@@ -53,7 +54,8 @@ $( document ).on("click", ".bp-button", function() {
       visitedpage = true;
 
       if (clickedcard == "What is a Bill?"){
-          $(".content .container").load("data/whats-a-bill.html");
+        $(".loading").fadeOut();
+        $(".content .container").load("data/whats-a-bill.html");
       }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
@@ -77,6 +79,7 @@ $( document ).on("click", ".bp-button", function() {
 
 $(document).ready(function(){
     setTimeout(function(){
+      $(".loading").fadeOut();
       $(".content .container").load("data/main-menu.html");
     }, 100);
 
