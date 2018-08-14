@@ -39,4 +39,4 @@ $( window ).resize(function() {
   $( ".bp-button i" ).addClass( "fa-bars" );
 });
 
-$(".content .container").load("data/whats-a-bill.html");
+//$(".content .container").load("data/whats-a-bill.html");
