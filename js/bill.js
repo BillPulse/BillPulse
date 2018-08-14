@@ -46,4 +46,12 @@ $( window ).resize(function() {
   $( ".bp-button i" ).addClass( "fa-bars" );
 });
 
-$(".content .container").load("data/main-menu.html");
+
+$(document).ready(function(){
+    setTimeout(function(){
+      $(".content .container").load("data/main-menu.html");
+    }, 500);
+});
+
+
+
