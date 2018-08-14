@@ -141,7 +141,7 @@ body{
 }
 
 .content .container{
-  top: 6rem;
+  top: 3rem;
   position: relative;
   color: black;
   font-size: 1.15em;
@@ -228,6 +228,7 @@ body{
 @media only screen and (min-width: 992px) {
     .page{
       padding: 0.5em;
+      top: 6rem;
     }
 
 }
