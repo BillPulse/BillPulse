@@ -1,7 +1,19 @@
+
+
+var visitedpage = false;
+
 $( document ).on("click", ".bp-button", function() {
     $( ".site-container" ).toggleClass( "modal-active" );
     $( ".site-container" ).toggleClass( "menu-active" );
-    $( ".bp-button i" ).toggleClass( "fa-times" );
+
+    if (visitedpage == false)
+      $( ".bp-button i" ).toggleClass( "fa-times" );
+    else{
+      $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
+      $(".content .container").load("data/main-menu.html");
+      visitedpage = false;
+    }
+
     $( ".bp-button i" ).toggleClass( "fa-bars" );
   });
 
@@ -33,12 +45,20 @@ $( document ).on("click", ".bp-button", function() {
  $( document ).on("click", ".bp-card", function() {
       var clickedcard = $(this).children(".title").children("strong").html();
 
+      visitedpage = true;
+
       if (clickedcard == "What is a Bill?"){
           $(".content .container").load("data/whats-a-bill.html");
       }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
           $( ".site-container" ).toggleClass( "feature-inactive" );
+          visitedpage = false;
+      }
+
+      if (visitedpage == true){
+        $( ".bp-button i" ).addClass( "fa-arrow-left" );
+        $( ".bp-button i" ).removeClass( "fa-bars" );
       }
     });
 
