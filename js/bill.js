@@ -34,25 +34,24 @@ $( window ).resize(function() {
 $(document).ready(function(){
     setTimeout(function(){
       $(".content .container").load("data/main-menu.html");
+
+       $( ".bp-card" ).click(function() {
+          var clickedcard = $(this).children(".title").children("strong").html();
+
+          if (clickedcard == "What is a Bill?"){
+              $(".content .container").load("data/whats-a-bill.html");
+          }
+          else{
+              $( ".site-container" ).toggleClass( "modal-active" );
+              $( ".site-container" ).toggleClass( "feature-inactive" );
+          }
+        });
+
+        $( ".bp-menu" ).click(function() {
+           $( ".site-container" ).addClass( "modal-active" );
+           $( ".site-container" ).addClass( "feature-inactive" );
+        });
     }, 100);
-
-
-    $( ".bp-card" ).click(function() {
-    var clickedcard = $(this).children(".title").children("strong").html();
-
-    if (clickedcard == "What is a Bill?"){
-        $(".content .container").load("data/whats-a-bill.html");
-    }
-    else{
-        $( ".site-container" ).toggleClass( "modal-active" );
-        $( ".site-container" ).toggleClass( "feature-inactive" );
-    }
-    });
-
-    $( ".bp-menu" ).click(function() {
-       $( ".site-container" ).addClass( "modal-active" );
-       $( ".site-container" ).addClass( "feature-inactive" );
-    });
 });
 
 
