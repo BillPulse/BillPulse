@@ -144,6 +144,7 @@ body{
   top: 5rem;
   position: relative;
   color: black;
+  font-size: 1.5em;
 }
 
 .menu-active .content{
