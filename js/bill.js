@@ -57,12 +57,12 @@ $( document ).on("click", ".bp-button", function() {
       }
 
       if (visitedpage == true){
-        $( ".bp-button i" ).addClass( "fa-arrow-left" );
         $( ".bp-button i" ).removeClass( "fa-bars" );
+        $( ".bp-button i" ).addClass( "fa-arrow-left" );
       }
     });
 
-    $( ".bp-menu" ).on("click", function() {
+    $( document).on("click", ".bp-menu" ,function() {
        $( ".site-container" ).addClass( "modal-active" );
        $( ".site-container" ).addClass( "feature-inactive" );
     });
