@@ -204,7 +204,7 @@ body{
 
 
 .loading{
-  z-index: 30;
+  z-index: 90;
   display: flex;
 }
 
