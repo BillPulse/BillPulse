@@ -206,6 +206,7 @@ body{
   opacity: 1;
   z-index: 30;
   transition: 1s;
+  display: flex;
 }
 
 
