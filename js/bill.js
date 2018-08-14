@@ -1,9 +1,4 @@
-$(document).ready(function(){
-    setTimeout(function(){
-      $(".content .container").load("data/main-menu.html");
-    }, 100);
-
-  $( ".bp-button" ).on("click", function() {
+$( ".bp-button" ).on("click", function() {
     $( ".site-container" ).toggleClass( "modal-active" );
     $( ".site-container" ).toggleClass( "menu-active" );
     $( ".bp-button i" ).toggleClass( "fa-times" );
@@ -52,6 +47,13 @@ $(document).ready(function(){
        $( ".site-container" ).addClass( "feature-inactive" );
     });
 
+
+
+
+$(document).ready(function(){
+    setTimeout(function(){
+      $(".content .container").load("data/main-menu.html");
+    }, 100);
 
 });
 
