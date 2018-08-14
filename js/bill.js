@@ -3,11 +3,12 @@
 var visitedpage = false;
 
 $( document ).on("click", ".bp-button", function() {
-    $( ".site-container" ).toggleClass( "modal-active" );
-    $( ".site-container" ).toggleClass( "menu-active" );
-
-    if (visitedpage == false)
+    
+    if (visitedpage == false){
+      $( ".site-container" ).toggleClass( "modal-active" );
+      $( ".site-container" ).toggleClass( "menu-active" );
       $( ".bp-button i" ).toggleClass( "fa-times" );
+    }
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
       $(".content .container").load("data/main-menu.html");
