@@ -36,11 +36,11 @@ $( document ).on("click", ".bp-button", function() {
 
 
   $( window ).resize(function() {
-    $( ".site-container" ).removeClass( "modal-active" );
-    $( ".site-container" ).removeClass( "menu-active" );
-    $( ".site-container" ).removeClass( "feature-inactive" );
-
     if(visitedpage == false){
+
+      $( ".site-container" ).removeClass( "modal-active" );
+      $( ".site-container" ).removeClass( "menu-active" );
+      $( ".site-container" ).removeClass( "feature-inactive" );
       $( ".bp-button i" ).removeClass( "fa-times" );
       $( ".bp-button i" ).addClass( "fa-bars" ); 
     }
