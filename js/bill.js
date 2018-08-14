@@ -22,8 +22,15 @@ $( ".modal-close .dev-card button" ).click(function() {
 });
 
 $( ".bp-card" ).click(function() {
-   $( ".site-container" ).toggleClass( "modal-active" );
-   $( ".site-container" ).toggleClass( "feature-inactive" );
+    var clickedcard = $(this).children(".title").children("strong").html();
+
+    if (clickedcard == "What is a Bill?"){
+
+    }
+    else{
+        $( ".site-container" ).toggleClass( "modal-active" );
+        $( ".site-container" ).toggleClass( "feature-inactive" );
+    }
 });
 
 $( ".bp-menu" ).click(function() {
@@ -39,4 +46,4 @@ $( window ).resize(function() {
   $( ".bp-button i" ).addClass( "fa-bars" );
 });
 
-//$(".content .container").load("data/whats-a-bill.html");
+$(".content .container").load("data/main-menu.html");

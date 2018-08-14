@@ -143,6 +143,7 @@ body{
 .content .container{
   top: 5rem;
   position: relative;
+  color: black;
 }
 
 .menu-active .content{
