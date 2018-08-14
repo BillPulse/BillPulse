@@ -38,3 +38,5 @@ $( window ).resize(function() {
   $( ".bp-button i" ).removeClass( "fa-times" );
   $( ".bp-button i" ).addClass( "fa-bars" );
 });
+
+$(".content .container").load("data/what's-a-bill.html");
