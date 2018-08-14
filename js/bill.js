@@ -60,7 +60,11 @@ $( document ).on("click", ".bp-button", function() {
 
       if (clickedcard == "What is a Bill?"){
         $(".loading").fadeOut();
-        $(".content .container").load("data/whats-a-bill.html");
+        $(".content .container-fluid").load("data/whats-a-bill.html");
+      }
+      else if (clickedcard == "The Mental Health Bill"){
+        $(".loading").fadeOut();
+        $(".content .container-fluid").load("data/mental-health-bill.html");
       }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
@@ -86,7 +90,7 @@ $( document ).on("click", ".bp-button", function() {
 $(document).ready(function(){
     $(".loading").fadeOut();
     setTimeout(function(){
-      $(".content .container").load("data/main-menu.html");
+      $(".content .container-fluid").load("data/main-menu.html");
     }, 100);
 
 });
