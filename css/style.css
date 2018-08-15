@@ -233,6 +233,7 @@ body{
   background-color: white;
   height: 100%;
   transition: 0.25s;
+  position: fixed;
 }
 
 .mobile-active .mobile-sidebar-pane{
