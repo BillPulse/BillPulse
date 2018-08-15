@@ -1,6 +1,6 @@
 
 var visitedpage = false;
-var FadeInTime = 300;
+var FadeInTime = 1000;
 
 var loadinghtml = 
   "<div class='loading position-absolute h-100'><div class='mx-auto my-auto'><i class='fas fa-spinner fa-spin'></i> </div></div>";
