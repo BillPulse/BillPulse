@@ -136,6 +136,7 @@ $( document ).on("click", ".bp-button", function() {
 
           $( ".site-container" ).removeClass( "modal-active" );
           $( ".site-container" ).removeClass( "menu-active" );
+          $( ".site-container" ).removeClass( "feature-inactive" );
       }
       
     });
