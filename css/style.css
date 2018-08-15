@@ -236,7 +236,7 @@ body{
   position: fixed;
 }
 
-.mobile-active .mobile-sidebar-pane{
+.menu-active .mobile-sidebar-pane{
   
   left: 0;
 
