@@ -180,7 +180,7 @@ function LoadPage(classname, filename){
       $(classname).load("data/" + filename + ".html", 
         function( response, status, xhr ) {
           if ( status == "error" ) {
-            alert(msg + xhr.status + " " + xhr.statusText);
+            alert(xhr.status + " " + xhr.statusText);
             $(classname).load("data/page-notfound.html");
           }
       });
