@@ -169,7 +169,7 @@ $(document).ready(function(){
       $(window).on('popstate', function() {
         var path = window.location.pathname;
         path = path.slice(1);
-        LoadPage(".content .content-dynamic", path);
+        LoadPage(".content .content-dynamic", "home");
       });
 
     }
