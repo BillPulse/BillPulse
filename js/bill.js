@@ -147,6 +147,7 @@ function LoadPage(classname, filename){
   $(classname).fadeOut(FadeTime);
   setTimeout(function(){
       $(classname).load("data/" + filename + ".html");
+      $(classname).hide();
       $(classname).fadeIn(FadeTime);
   }, FadeTime+50);
   
