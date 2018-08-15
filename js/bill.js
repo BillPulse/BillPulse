@@ -1,9 +1,12 @@
 
 var visitedpage = false;
 var FadeTime = 250;
+var enableLoadingIcon = false;
 
+/*
 var loadinghtml = 
   "<div class='loading position-absolute h-100'><div class='mx-auto my-auto'><i class='fas fa-spinner fa-spin'></i> </div></div>";
+*/
 
 $( document ).on("click", ".bp-button", function() {
     
@@ -133,9 +136,11 @@ $(document).ready(function(){
 });
 
 function LoadingAnimation(){
-  var currentdata = $(".content .content-dynamic").html();
-  $(".content .content-dynamic").html(loadinghtml + currentdata);
-  $(".loading").fadeOut();
+  if (enableLoadingIcon == true){
+     var currentdata = $(".content .content-dynamic").html();
+      $(".content .content-dynamic").html(loadinghtml + currentdata);
+      $(".loading").fadeOut();
+  }
 }
 
 function LoadPage(classname, filename){
