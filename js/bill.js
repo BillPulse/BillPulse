@@ -139,8 +139,10 @@ function LoadingAnimation(){
 }
 
 function LoadPage(classname, filename){
-  $(classname).fadeOut(FadeInTime);
-  $(classname).load("data/" + filename + ".html");
-  $(classname).hide();
-  $(classname).fadeIn(FadeInTime);
+  $(classname).fadeOut(100);
+  setTimeout(function(){
+      $(classname).load("data/" + filename + ".html");
+      $(classname).fadeIn(FadeInTime);
+  }, 101);
+  
 }
