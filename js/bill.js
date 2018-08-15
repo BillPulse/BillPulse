@@ -98,6 +98,9 @@ $( document ).on("click", ".bp-button", function() {
       else if(clickedmenu == "Profile"){
         LoadPage(".content .content-dynamic", "profile");
       }
+      else if(clickedmenu == "About"){
+        LoadPage(".content .content-dynamic", "about");
+      }
       else{
         $( ".site-container" ).addClass( "modal-active" );
         $( ".site-container" ).addClass( "feature-inactive" );
