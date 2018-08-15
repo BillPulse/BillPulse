@@ -150,7 +150,7 @@ $( document ).on("click", ".bp-button", function() {
 
 $(document).ready(function(){
     var path = window.location.pathname;
-    path = path.replaceFirst("/", "");
+    path = path.slice(1);
     $(".loading").fadeOut();
     setTimeout(function(){
       if(missingpage == false){
