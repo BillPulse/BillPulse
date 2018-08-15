@@ -170,7 +170,6 @@ $(document).ready(function(){
         var path = window.location.pathname;
         path = path.slice(1);
         LoadPage(".content .content-dynamic", path);
-        alert(path);
       });
 
     }
