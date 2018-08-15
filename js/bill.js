@@ -83,8 +83,32 @@ $( document ).on("click", ".bp-button", function() {
     });
 
     $( document).on("click", ".bp-menu" ,function() {
-       $( ".site-container" ).addClass( "modal-active" );
-       $( ".site-container" ).addClass( "feature-inactive" );
+      var clickedmenu = $(this).children(".menu-name").html();
+
+      if (clickedmenu == "Home"){
+
+        if (visitedpage == true){
+          $( ".bp-button i" ).removeClass( "fa-arrow-left" );
+          $( ".bp-button" ).addClass( "d-lg-none");
+          visitedpage = false;
+        }
+        else{
+          $( ".bp-button i" ).removeClass( "fa-times" );
+        }
+        
+        $( ".bp-button i" ).addClass( "fa-bars" );
+        
+        
+        
+        $(".content .container").load("data/main-menu.html");
+       
+
+      }
+      else{
+         $( ".site-container" ).addClass( "modal-active" );
+        $( ".site-container" ).addClass( "feature-inactive" );
+      }
+      
     });
 
 
