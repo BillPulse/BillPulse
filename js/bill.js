@@ -177,7 +177,18 @@ function LoadPage(classname, filename){
   $(classname).fadeOut(FadeTime);
   history.replaceState(null, '', filename);
   setTimeout(function(){
-      $(classname).load("data/" + filename + ".html");
+      $(classname).load("data/" + filename + ".html", 
+        function( response, status, xhr ) {
+          if ( status == "error" ) {
+            alert(msg + xhr.status + " " + xhr.statusText);
+            $(classname).load("data/page-notfound.html");
+          }
+      });
+
+
+
+
+
       $(classname).fadeIn(FadeTime);
   }, FadeTime);
   
