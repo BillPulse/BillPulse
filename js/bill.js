@@ -167,9 +167,10 @@ $(document).ready(function(){
     if (window.history && window.history.pushState) {
 
       $(window).on('popstate', function() {
-        path = window.location.pathname;
+        var path = window.location.pathname;
         path = path.slice(1);
         LoadPage(".content .content-dynamic", path);
+        alert(path);
       });
 
     }
