@@ -163,6 +163,17 @@ $(document).ready(function(){
       
     }, 100);
 
+
+    if (window.history && window.history.pushState) {
+
+      $(window).on('popstate', function() {
+        path = window.location.pathname;
+        path = path.slice(1);
+        LoadPage(".content .content-dynamic", path);
+      });
+
+    }
+
 });
 
 function LoadingAnimation(){
