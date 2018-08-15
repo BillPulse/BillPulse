@@ -1,6 +1,6 @@
 
-
 var visitedpage = false;
+var FadeInTime = 300;
 
 var loadinghtml = 
   "<div class='loading position-absolute h-100'><div class='mx-auto my-auto'><i class='fas fa-spinner fa-spin'></i> </div></div>";
@@ -15,7 +15,7 @@ $( document ).on("click", ".bp-button", function() {
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
       $( ".bp-button" ).addClass( "d-lg-none");
-      $(".content .content-dynamic").load("data/main-menu.html");
+     LoadPage(".content .content-dynamic", "main-menu");
       visitedpage = false;
     }
 
@@ -63,11 +63,11 @@ $( document ).on("click", ".bp-button", function() {
 
       if (clickedcard == "What is a Bill?"){
         LoadingAnimation();
-        $(".content .content-dynamic").load("data/whats-a-bill.html");
+        LoadPage(".content .content-dynamic", "whats-a-bill");
       }
       else if (clickedcard == "The Mental Health Bill"){
         LoadingAnimation();
-        $(".content .content-dynamic").load("data/mental-health-bill.html");
+        LoadPage(".content .content-dynamic", "mental-health-bill");
       }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
@@ -104,7 +104,7 @@ $( document ).on("click", ".bp-button", function() {
         
         
         
-        $(".content .content-dynamic").load("data/main-menu.html");
+        LoadPage(".content .content-dynamic", "main-menu");
        
       }
       else{
@@ -127,7 +127,7 @@ $( document ).on("click", ".bp-button", function() {
 $(document).ready(function(){
     $(".loading").fadeOut();
     setTimeout(function(){
-      $(".content .content-dynamic").load("data/main-menu.html");
+      LoadPage(".content .content-dynamic", "main-menu");
     }, 100);
 
 });
@@ -136,4 +136,9 @@ function LoadingAnimation(){
   var currentdata = $(".content .content-dynamic").html();
   $(".content .content-dynamic").html(loadinghtml + currentdata);
   $(".loading").fadeOut();
+}
+
+function LoadPage(classname, filename){
+  $(classname).load("data/" + filename ".html");
+  $(classname).fadeIn(FadeInTime);
 }
