@@ -148,6 +148,6 @@ function LoadPage(classname, filename){
   setTimeout(function(){
       $(classname).load("data/" + filename + ".html");
       $(classname).fadeIn(FadeTime);
-  }, FadeTime+1);
+  }, FadeTime+50);
   
 }
