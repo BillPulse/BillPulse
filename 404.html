@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="icon" type="image/x-icon" href="bpulse.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="bpulse.ico">
+		<title>Bill Pulse</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="site-container">
+			<div class="navbar w-100 position-fixed" style="top: 0; color: white;">
+				<div class="w-100 bp-blue-bg" style="padding: 1em; border-bottom-width: 1px; border-bottom-style: solid;">
+					<div class="row">
+						<div class="col-6 col-md-4 col-lg-3 d-flex flex-wrap">
+							<div class="bp-button my-auto d-block d-lg-none"><i class="fas fa-bars"></i></div>
+							<div class="my-auto" style="margin-left: 3.5vw"><img src="imgs/bplogogreenwhite.png" style="height: 8.5vw; max-height: 40px; top: 0" class="position-relative"></div>
+						</div>
+						<div class="col-6">
+							<div class="form-group-lg my-auto w-100 h-100">
+								<span class="position-absolute d-flex h-100" style="width: 2.5em;">
+							    	<i class="fas fa-search my-auto mx-auto" style="color: #222"></i>
+								</span>
+							    <input type="search" class="form-control my-auto h-100 bp-searchbar" id="" placeholder="Search">
+							    
+							 </div>
+						</div>
+						<div class="d-none d-lg-block col-lg-3">
+						</div>
+					</div>
+				</div>
+				<div class="mobile-sidebar d-lg-block">
+					<div class="w-100" style=" padding-top: .5em">
+						<div class="d-flex w-100 align-content-around flex-column flex-lg-row">
+							<a class="bp-menu bp-active-menu mx-auto" href="#"><i class="fas fa-home"></i><span class="menu-name">Home</span></a>
+							<a class="bp-menu mx-auto" href="#"><i class="fas fa-clipboard-list"></i><span class="menu-name">Bills</span></a>
+							<a class="bp-menu mx-auto" href="#"><i class="fas fa-book-open"></i><span class="menu-name">Activity Log</span></a>
+							<a class="bp-menu mx-auto" href="#"><i class="fas fa-user"></i><span class="menu-name">Profile</span></a>
+							<a class="bp-menu mx-auto" href="#"><i class="fas fa-info"></i><span class="menu-name">About</span></a>
+							<a class="bp-menu mx-auto" href="#"><i class="fas fa-cog"></i><span class="menu-name">Settings</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mobile-sidebar-pane d-lg-none">
+			</div>
+			
+			<div class="content h-100 w-100 d-flex">
+				<div class="modal-close d-flex">
+
+					<div class="dev-card mx-auto my-auto">
+						<h6 class="h6"> <strong>IN DEVELOPMENT</strong> </h6>
+						<p>This feature is currently in development. The creators can provide information of what to expect.</p>
+						<a class="float-right">
+						<button type="button" class="btn btn-sm btn-primary">OK</button>
+						</a>
+					</div>
+					<div class="modal-close-bg">
+					</div>
+			</div>
+
+			
+
+				
+				<!--- Content Goes Here -->
+				<div class="row container mx-auto my-auto content-dynamic">
+					<div class='loading position-absolute h-100'><div class='mx-auto my-auto'><i class='fas fa-spinner fa-spin'></i> </div></div>
+				</div>
+
+
+			</div>
+		</div>		
+
+
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	  	<script src="js/bootstrap.min.js"></script>
+	  	<script src="js/bill.js"></script>
+	</body>
+</html>
