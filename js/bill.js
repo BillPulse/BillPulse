@@ -19,7 +19,7 @@ $( document ).on("click", ".bp-button", function() {
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
       $( ".bp-button" ).addClass( "d-lg-none");
-     LoadPage(".content .content-dynamic", "main-menu");
+     LoadPage(".content .content-dynamic", "home");
       visitedpage = false;
     }
 
@@ -103,7 +103,7 @@ $( document ).on("click", ".bp-button", function() {
       $(".bp-menu").removeClass("bp-active-menu");
 
       if (clickedmenu == "Home"){
-        LoadPage(".content .content-dynamic", "main-menu");
+        LoadPage(".content .content-dynamic", "home");
       }
       else if(clickedmenu == "Profile"){
         LoadPage(".content .content-dynamic", "profile");
@@ -155,7 +155,7 @@ $(document).ready(function(){
     $(".loading").fadeOut();
     setTimeout(function(){
       if(missingpage == false){
-        LoadPage(".content .content-dynamic", "main-menu");
+        LoadPage(".content .content-dynamic", "home");
       }
       else{
         LoadPage(".content .content-dynamic", path);
