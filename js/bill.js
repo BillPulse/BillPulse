@@ -85,6 +85,7 @@ $( document ).on("click", ".bp-button", function() {
     $( document).on("click", ".bp-menu" ,function() {
       var clickedmenu = $(this).children(".menu-name").html();
       var currentactive = $(".bp-menu");
+      var activateclicked = true;
 
       $(".bp-menu").removeClass("bp-active-menu");
 
@@ -105,13 +106,17 @@ $( document ).on("click", ".bp-button", function() {
         
         $(".content .content-dynamic").load("data/main-menu.html");
        
-        $(this).addClass("bp-active-menu");
       }
       else{
          $( ".site-container" ).addClass( "modal-active" );
         $( ".site-container" ).addClass( "feature-inactive" );
 
         $(currentactive).addClass("bp-active-menu");
+        activateclicked = false;
+      }
+
+      if(activateclicked == true){
+         $(this).addClass("bp-active-menu");
       }
       
     });
