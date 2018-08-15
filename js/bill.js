@@ -149,6 +149,6 @@ function LoadPage(classname, filename){
       $(classname).load("data/" + filename + ".html");
       $(classname).hide();
       $(classname).fadeIn(FadeTime);
-  }, FadeTime+50);
+  }, FadeTime);
   
 }
