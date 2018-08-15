@@ -2,6 +2,9 @@
 
 var visitedpage = false;
 
+var loadinghtml = 
+  "<div class='loading position-absolute h-100'><div class='mx-auto my-auto'><i class='fas fa-spinner fa-spin'></i> </div></div>";
+
 $( document ).on("click", ".bp-button", function() {
     
     if (visitedpage == false){
@@ -59,11 +62,11 @@ $( document ).on("click", ".bp-button", function() {
       visitedpage = true;
 
       if (clickedcard == "What is a Bill?"){
-        $(".loading").fadeOut();
+        LoadingAnimation();
         $(".content .container").load("data/whats-a-bill.html");
       }
       else if (clickedcard == "The Mental Health Bill"){
-        $(".loading").fadeOut();
+        LoadingAnimation();
         $(".content .container").load("data/mental-health-bill.html");
       }
       else{
@@ -95,3 +98,8 @@ $(document).ready(function(){
 
 });
 
+function LoadingAnimation(){
+  var currentdata = $(".content .container").html();
+  $(".content .container").html(loadinghtml + currentdata);
+  $(".loading").fadeOut();
+}
