@@ -59,7 +59,9 @@ $( document ).on("click", ".bp-button", function() {
    
   });
 
- $( document ).on("click", ".bp-card", function() {
+ $( document ).on("click", ".bp-card", function(event) {
+      event.preventDefault();
+
       var clickedcard = $(this).children(".title").children("strong").html();
 
       visitedpage = true;
@@ -85,7 +87,10 @@ $( document ).on("click", ".bp-button", function() {
       }
     });
 
-    $( document).on("click", ".bp-menu" ,function() {
+    $( document).on("click", ".bp-menu" ,function(event) {
+
+      event.preventDefault();
+
       var clickedmenu = $(this).children(".menu-name").html();
       var currentactive = $(".bp-active-menu");
       var activateclicked = true;
