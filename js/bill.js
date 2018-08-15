@@ -139,6 +139,11 @@ $( document ).on("click", ".bp-button", function() {
       
     });
 
+    $( document ).on("click", "#pulsemodal btn-danger", function() {
+        $(this).toggleClass("btn-danger");  
+        $(this).toggleClass("btn-outline-danger");
+    });
+
 
 
 
