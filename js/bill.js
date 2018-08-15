@@ -70,6 +70,10 @@ $( document ).on("click", ".bp-button", function() {
         LoadingAnimation();
         LoadPage(".content .content-dynamic", "whats-a-bill");
       }
+      else if (clickedcard == "News"){
+        LoadingAnimation();
+        LoadPage(".content .content-dynamic", "news");
+      }
       else if (clickedcard == "The Mental Health Bill"){
         LoadingAnimation();
         LoadPage(".content .content-dynamic", "mental-health-bill");
