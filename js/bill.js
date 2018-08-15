@@ -1,6 +1,6 @@
 
 var visitedpage = false;
-var FadeInTime = 100;
+var FadeInTime = 250;
 
 var loadinghtml = 
   "<div class='loading position-absolute h-100'><div class='mx-auto my-auto'><i class='fas fa-spinner fa-spin'></i> </div></div>";
@@ -141,5 +141,5 @@ function LoadingAnimation(){
 function LoadPage(classname, filename){
   $(classname).load("data/" + filename + ".html");
   $(classname).hide();
-  $(classname).fadeIn(FadeInTime);
+  $(classname).slideUp(FadeInTime);
 }
