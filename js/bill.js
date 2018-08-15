@@ -84,6 +84,9 @@ $( document ).on("click", ".bp-button", function() {
 
     $( document).on("click", ".bp-menu" ,function() {
       var clickedmenu = $(this).children(".menu-name").html();
+      var currentactive = $(".bp-menu");
+
+      $(".bp-menu").removeClass("bp-active-menu");
 
       if (clickedmenu == "Home"){
 
@@ -102,11 +105,13 @@ $( document ).on("click", ".bp-button", function() {
         
         $(".content .content-dynamic").load("data/main-menu.html");
        
-
+        $(this).addClass("bp-active-menu");
       }
       else{
          $( ".site-container" ).addClass( "modal-active" );
         $( ".site-container" ).addClass( "feature-inactive" );
+
+        $(currentactive).addClass("bp-active-menu");
       }
       
     });
