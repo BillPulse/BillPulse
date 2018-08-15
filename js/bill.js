@@ -141,6 +141,7 @@ function LoadingAnimation(){
 function LoadPage(classname, filename){
   $(classname).load("data/" + filename + ".html");
    setTimeout(function(){
-      $(".content").fadeIn(FadeInTime);
+      $(classname).hide();
+      $(classname).fadeIn(FadeInTime);
     }, 100);
 }
