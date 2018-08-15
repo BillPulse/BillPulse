@@ -175,7 +175,7 @@ function LoadingAnimation(){
 
 function LoadPage(classname, filename){
   $(classname).fadeOut(FadeTime);
-  history.replaceState(null, '', filename);
+  history.pushState(null, '', filename);
   setTimeout(function(){
       $(classname).load("data/" + filename + ".html", 
         function( response, status, xhr ) {
