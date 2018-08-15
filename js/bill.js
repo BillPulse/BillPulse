@@ -15,7 +15,7 @@ $( document ).on("click", ".bp-button", function() {
     else{
       $( ".bp-button i" ).toggleClass( "fa-arrow-left" );
       $( ".bp-button" ).addClass( "d-lg-none");
-      $(".content .container").load("data/main-menu.html");
+      $(".content .content-dynamic").load("data/main-menu.html");
       visitedpage = false;
     }
 
@@ -63,11 +63,11 @@ $( document ).on("click", ".bp-button", function() {
 
       if (clickedcard == "What is a Bill?"){
         LoadingAnimation();
-        $(".content .container").load("data/whats-a-bill.html");
+        $(".content .content-dynamic").load("data/whats-a-bill.html");
       }
       else if (clickedcard == "The Mental Health Bill"){
         LoadingAnimation();
-        $(".content .container").load("data/mental-health-bill.html");
+        $(".content .content-dynamic").load("data/mental-health-bill.html");
       }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
@@ -100,7 +100,7 @@ $( document ).on("click", ".bp-button", function() {
         
         
         
-        $(".content .container").load("data/main-menu.html");
+        $(".content .content-dynamic").load("data/main-menu.html");
        
 
       }
@@ -117,13 +117,13 @@ $( document ).on("click", ".bp-button", function() {
 $(document).ready(function(){
     $(".loading").fadeOut();
     setTimeout(function(){
-      $(".content .container").load("data/main-menu.html");
+      $(".content .content-dynamic").load("data/main-menu.html");
     }, 100);
 
 });
 
 function LoadingAnimation(){
-  var currentdata = $(".content .container").html();
-  $(".content .container").html(loadinghtml + currentdata);
+  var currentdata = $(".content .content-dynamic").html();
+  $(".content .content-dynamic").html(loadinghtml + currentdata);
   $(".loading").fadeOut();
 }
