@@ -128,6 +128,9 @@ $( document ).on("click", ".bp-button", function() {
           }
           
           $( ".bp-button i" ).addClass( "fa-bars" );
+
+          $( ".site-container" ).removeClass( "modal-active" );
+          $( ".site-container" ).removeClass( "menu-active" );
       }
       
     });
