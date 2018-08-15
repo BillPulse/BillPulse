@@ -2,6 +2,7 @@
 var visitedpage = false;
 var FadeTime = 250;
 var enableLoadingIcon = false;
+var missingpage = false;
 
 /*
 var loadinghtml = 
@@ -148,9 +149,17 @@ $( document ).on("click", ".bp-button", function() {
 
 
 $(document).ready(function(){
+    var path = window.location.pathname;
+    path = path.replaceFirst("/", "");
     $(".loading").fadeOut();
     setTimeout(function(){
-      LoadPage(".content .content-dynamic", "main-menu");
+      if(missingpage == false){
+        LoadPage(".content .content-dynamic", "main-menu");
+      }
+      else{
+        LoadPage(".content .content-dynamic", path);
+      }
+      
     }, 100);
 
 });
