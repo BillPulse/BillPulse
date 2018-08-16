@@ -146,6 +146,18 @@ $( document ).on("click", ".bp-button", function() {
         $(this).toggleClass("btn-success");
     });
 
+   $(document).on("click", "#btnfollow" ,function() {
+    var btnstate = $('#btnfollow').text();
+
+    if(btnstate=="FOLLOW"){
+      $("#btnfollow").html('FOLLOWED');
+    }
+    else{
+      $("#btnfollow").html('FOLLOW');
+    }
+
+  });
+
 
 
 
