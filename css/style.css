@@ -258,6 +258,15 @@ div{
   border-radius: 2px;
 }
 
+.carousel-caption
+{
+    top: 30%;
+    background: rgba(0,0,0,0.50);
+    border-radius: 100px; 
+    height: 15vh;
+    width: 60vw;
+}
+
 
 @media only screen and (min-width: 2560px) {
     .container-fluid, .container{
