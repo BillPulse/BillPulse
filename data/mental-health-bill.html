@@ -25,6 +25,28 @@
 		</div>
 		<div class="col-lg-4">
 			<div class="d-flex flex-column">
+				<div class="border border-primary" data>
+					<a href="#pulsemodal" data-toggle="modal" data-target="#analysismodal" style="outline:none; text-decoration: none; color: black">
+						<div class="row text-center">
+
+							<div class="col-sm-4">
+								<h2>4.54</h2>
+								<p>RATING</p>
+							</div>
+							<div class="col-sm-4" >
+								<h2>154</h2>
+								<p>PULSES</p>
+							</div>
+
+							<div class="col-sm-4">
+								<h2>75</h2>
+								<p>REVIEWS</p>
+							</div>
+
+
+						</div>
+					</a>
+				</div>
 				<img src="imgs/status.png" style="max-width: 199px; max-height: 203px; margin: 1em;">
 				<button type="button" class="btn btn-light bp-bill-buttons" id="btnfollow"><i class="far fa-hand-pointer"></i> FOLLOW</button>
 				<button type="button" class="btn btn-danger bp-bill-buttons" data-toggle="modal" data-target="#pulsemodal"><i class="far fa-dot-circle"></i> PULSE</button>
@@ -135,6 +157,35 @@
 	      </div>
 	    </div>
 	  </div>
+	</div>
+	
+	<!--Data Modal -->
+	<div class="modal fade" id="analysismodal" tabindex="-1" role="dialog" aria-labelledby="analysisModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header text-center" style="background-color:  #354c7a">
+		<h5 class="modal-title w-100 font-weight-bold" id="analysisModalLabel" style="color: white">Feedback Overview</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	      </div>
+	      <div class="modal-body" style="margin: 1em">
+		<img src="imgs/ratingssogie.jpg" style="height: 100%; width: 100%">
+		<br/>
+		<br/>
+		<img src="imgs/helpsogie.jpg" style="height: 100%; width: 100%">
+		<br/>
+		<br/>
+		<img src="imgs/urgencysogie.jpg" style="height: 100%; width: 100%">
+		<br/>
+		<br/>
+		<img src="imgs/keywordssogie.jpg" style="height: 100%; width: 100%">
+	      </div>
+	      <div class="modal-footer">
+		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	 </div>
 	</div>
 
 </div>
