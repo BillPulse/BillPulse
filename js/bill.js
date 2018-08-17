@@ -147,7 +147,7 @@ $( document ).on("click", ".bp-button", function() {
     });
 
    $(document).on("click", "#btnfollow" ,function() {
-      $("#btnfollow").html('FOLLOWED');
+      $("#btnfollow").html('<i class="far fa-check-circle"></i>FOLLOWED');
   });
 
 
