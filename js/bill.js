@@ -157,7 +157,7 @@ $( document ).on("click", ".bp-button", function() {
     });
 
    $(document).on("click", "#btnfollow" ,function() {
-      if($("#btnfollow").html('<i class="far fa-hand-pointer"></i> FOLLOW')){
+      if($("#btnfollow").html() == '<i class="far fa-hand-pointer"></i> FOLLOW'){
         $("#btnfollow").html('<i class="far fa-check-circle"></i> FOLLOWED');
       }
       else{
