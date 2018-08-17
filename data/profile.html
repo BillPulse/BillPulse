@@ -24,6 +24,13 @@
 			<p style="margin: 5px"><i>Pulse User</i></p>
 		</div>
 	</div>
+	<br/>
+	<br/>
+	<div class="row" style="height: 6vh">
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#createmodal" style="width: 200px"><i class="far fa-dot-circle"></i> CREATE PETITION</button>
+		&nbsp;
+		<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#listmodal" style="width: 200px"><i class="far fa-dot-circle"></i> PETITIONS LIST</button>
+	</div>
 	<div class="row pt-3" style="height: 20vh">
 		<div class="col w-100 pt-2 border border-primary" style="background-color: white; color: black;">
 			<div class="row">
@@ -47,10 +54,122 @@
 
 		</div>
 	</div>
-
-	<div class="row pt-3">
-		<div class="col-4">
-
-		</div>
-	</div>
+	
 </div>
+
+
+				<!-- Petition Modal -->
+				<div class="modal fade" id="createmodal" tabindex="-1" role="dialog" aria-labelledby="createLabel" aria-hidden="true" >
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header text-center" style="background-color: #5cb85c">
+						<h3 class="modal-title w-100 font-weight-bold" id="createLabel" style="color: white">CREATE A PETITION</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					      </div>
+					      <div class="modal-body text-center" style="color: black">
+						 <div class="row pt-2">
+							<div class="col">
+								<h6 class="pr-2">Write a name for your petition</h6>
+							</div>
+						</div>
+						 <div class="row w-60 pt-2">
+							<div class="col-10 offset-1">
+								<textarea rows="1" cols="40" style="border-radius:15px">
+								</textarea>
+							</div>
+						 </div>
+
+						  <div class="row pt-2">
+							<div class="col">
+								<h6 class="pr-2">Key organizations/ individuals/ partners</h6>
+							</div>
+						</div>
+						 <div class="row w-60 pt-2">
+							<div class="col-10 offset-1">
+								<textarea rows="1" cols="40" style="border-radius:15px">
+								</textarea>
+							</div>
+						 </div>
+
+						  <div class="row pt-2">
+							<div class="col">
+								<h6 class="pr-2">Explain the contents of the petition you want to make</h6>
+							</div>
+						</div>
+						 <div class="row w-60 pt-2">
+							<div class="col-10 offset-1">
+								<textarea rows="7" cols="40" style="border-radius:15px">
+								</textarea>
+							</div>
+						 </div>
+
+					      </div>
+					      <div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">SUBMIT</button>
+						
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+				</div>
+
+				<!--Petition List Modal-->
+
+				<div class="modal fade" id="listmodal" tabindex="-1" role="dialog" aria-labelledby="listLabel" aria-hidden="true" >
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header text-center" style="background-color: #f0ad4e">
+						<h3 class="modal-title w-100 font-weight-bold" id="listLabel" style="color: black">PETITION LIST</h3>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					      </div>
+					      <div class="modal-body text-center" style="color: black">
+						 <div class="row pt-2">
+							<div class="col">
+								<h5 class="pr-2">Call for Regularization of Workers</h5>
+							</div>
+						</div>
+						<hr/>
+
+						<div class="row pt-2">
+							<div class="col">
+								<h5 class="pr-2">Breakdown of LGBT Rights in SOGIE Bill</h5>
+							</div>
+						</div>
+						<hr/>
+
+						<div class="row pt-2">
+							<div class="col">
+								<h5 class="pr-2">Efficient Traffic Ban Regulations</h5>
+							</div>
+						</div>
+						<hr/>
+
+						<div class="row pt-2">
+							<div class="col">
+								<h5 class="pr-2">Donations to Flood-affected Areas</h5>
+							</div>
+						</div>
+						<hr/>
+
+						<div class="row pt-2">
+							<div class="col">
+								<h5 class="pr-2">Book Donations to School Libraries</h5>
+							</div>
+						</div>
+
+
+					      </div>
+					      <div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal">CLOSE</button>
+						
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+				</div>
