@@ -79,6 +79,10 @@ $( document ).on("click", ".bp-button", function() {
         LoadingAnimation();
         LoadPage(".content .content-dynamic", "mental-health-bill");
       }
+      else if (clickedcard == "Committee Hearings"){
+        LoadingAnimation();
+        LoadPage(".content .content-dynamic", "committee");
+      }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
           $( ".site-container" ).toggleClass( "feature-inactive" );
