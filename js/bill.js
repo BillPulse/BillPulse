@@ -118,6 +118,9 @@ $( document ).on("click", ".bp-button", function() {
       else if(clickedmenu == "Bills"){
         LoadPage(".content .content-dynamic", "bills");
       }
+      else if(clickedmenu == "Activity Log"){
+        LoadPage(".content .content-dynamic", "activitylog");
+      }
       else{
         $( ".site-container" ).addClass( "modal-active" );
         $( ".site-container" ).addClass( "feature-inactive" );
