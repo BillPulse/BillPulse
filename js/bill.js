@@ -83,6 +83,10 @@ $( document ).on("click", ".bp-button", function() {
         LoadingAnimation();
         LoadPage(".content .content-dynamic", "committee");
       }
+      else if (clickedcard == "Your Followed Bills"){
+        LoadingAnimation();
+        LoadPage(".content .content-dynamic", "activitylog");
+      }
       else{
           $( ".site-container" ).toggleClass( "modal-active" );
           $( ".site-container" ).toggleClass( "feature-inactive" );
